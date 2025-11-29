@@ -2,3 +2,7 @@
 
 @import url("./global/global.css");
 @import url("./global/header.css");
+
+/* Utilidades */
+
+@import url("./utilidades/tipografia.css");
