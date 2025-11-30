@@ -1,0 +1,36 @@
+.sobre-content .sobre-content-item {
+  background: var(--cor-0);
+  padding: 80px;
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  .sobre-content .sobre-content-item {
+    padding: 20px 8px;
+  }
+}
+
+.sobre-content .sobre-content-item h2 {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sobre-content .sobre-content-item p + h2 {
+  margin-top: 40px;
+}
+
+.sobre-content .sobre-content-item h2:before {
+  content: "";
+  display: block;
+  min-width: 4px;
+  min-height: 40px;
+
+  background: currentColor;
+  border-radius: 4px;
+}
+
+.sobre-content .sobre-content-item p strong {
+  font-weight: 500;
+}

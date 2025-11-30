@@ -16,3 +16,7 @@
 @import url("./home/home-servicos.css");
 @import url("./home/home-pacotes.css");
 @import url("./home/home-depoimentos.css");
+
+/* Seções */
+
+@import url("./secoes/sobre.css");
