@@ -6,9 +6,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .header-nav ul {
   display: flex;
   gap: 40px;
+}
+
+.header-nav ul li:last-child {
+  margin-left: 20px;
 }
