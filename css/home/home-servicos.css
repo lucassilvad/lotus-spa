@@ -1,0 +1,46 @@
+.home-servicos {
+  margin-top: 60px;
+}
+
+.home-servicos h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-servicos ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .home-servicos ul {
+    gap: 20px;
+  }
+}
+
+.home-servicos ul li {
+  flex: 1;
+  min-width: 200px;
+}
+
+.home-servicos ul li img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+
+.home-servicos ul .servico-content {
+  background: var(--cor-p1);
+  padding: 8px 16px 20px 16px;
+}
+
+.home-servicos ul span {
+  display: block;
+}
+
+.home-servicos .btn-1 {
+  justify-self: center;
+}
