@@ -4,6 +4,8 @@
 
 .header {
   display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
   align-items: center;
   justify-content: space-between;
   padding-top: 28px;
@@ -12,22 +14,31 @@
 
 .header-nav ul {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 40px;
 }
 
-.header-nav ul li:last-child {
-  margin-left: 20px;
+.header-nav ul li {
+  cursor: pointer;
 }
 
-.header-nav ul li::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 2px;
-  background: currentColor;
-  margin: 0px auto;
-  margin-top: 4px;
-  transition: 0.3s;
+@media (max-width: 800px) {
+  .header {
+    justify-content: center;
+  }
+
+  .header-nav ul {
+    justify-content: center;
+  }
+
+  .header-nav ul li:last-child {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    justify-self: center;
+    text-align: center;
+  }
 }
 
 .header-nav ul li::before {
@@ -41,7 +52,18 @@
   transition: 0.3s;
 }
 
-.header-nav ul li:hover::after,
-.header-nav ul li:hover::before {
+.header-nav ul li::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: currentColor;
+  margin: 0px auto;
+  margin-top: 4px;
+  transition: 0.3s;
+}
+
+.header-nav ul li:hover::before,
+.header-nav ul li:hover::after {
   width: 100%;
 }
