@@ -1,0 +1,105 @@
+.servicos .servicos-escolha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--cor-s2);
+}
+
+.servicos .servicos-selecao:last-child {
+  display: none;
+}
+
+.servicos .servicos-selecao:last-child.active {
+  display: block;
+}
+
+.servicos .servicos-selecao .servico-tipo {
+  display: flex;
+}
+
+@media (max-width: 760px) {
+  .servicos .servicos-selecao .servico-tipo {
+    display: block;
+  }
+}
+
+.servicos .servicos-selecao .servico-tipo-item label {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.servicos .servicos-selecao input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.servicos .servicos-selecao label {
+  display: block;
+}
+
+.servicos .servicos-selecao input:checked + label {
+  background: var(--cor-s2);
+  color: #faf7f2;
+}
+
+.servicos .servicos-lista {
+  margin-top: 80px;
+}
+
+.servicos .servicos-lista ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .servicos .servicos-lista ul {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
+.servicos .servicos-lista img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.servicos .servicos-lista .servicos-lista-item-content {
+  background: var(--cor-p1);
+  padding: 12px 16px 16px 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.servicos .servicos-lista .servicos-lista-item-content h2 {
+  margin-bottom: 4px;
+}
+
+.servicos .servicos-lista .servicos-item-pacote {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.servicos .servicos-lista .servicos-item-pacote img {
+  justify-self: center;
+}
+
+.servicos .servicos-lista .servicos-lista-item-pacote-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.servicos .servicos-lista .servicos-lista-item-pacote-content h2 {
+  margin-bottom: 12px;
+}
+
+.servicos .servicos-lista .servicos-lista-item-pacote-content .pacote-preco {
+  margin-bottom: 16px;
+}
+
+.servicos .servicos-lista .servicos-lista-item-pacote-content span {
+  display: block;
+}
