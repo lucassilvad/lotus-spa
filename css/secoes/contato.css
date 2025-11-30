@@ -1,0 +1,106 @@
+.form-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1024px) {
+  .form-contato {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-contato h2 {
+  margin-bottom: 24px;
+}
+
+.form-contato h2:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--cor-p5);
+  margin-top: 8px;
+}
+
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato input[type="time"],
+.form-contato select,
+.form-contato option,
+.form-contato textarea {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  background-color: var(--cor-p1);
+  outline: none;
+  border: 2px solid var(--cor-p5);
+  border-radius: 4px;
+  padding: 12px 20px;
+  appearance: none;
+}
+
+.form-contato select {
+  background: var(--cor-p1) url("../../img/icones/arrow-select.svg") no-repeat
+    center right 20px;
+}
+
+.form-contato input::placeholder,
+.form-contato textarea::placeholder {
+  color: var(--cor-p4);
+}
+
+.form-campos input + input,
+.form-contato select + select,
+.form-contato input + select {
+  margin-top: 16px;
+}
+
+.outros-contato-bg {
+  background: var(--cor-0);
+  padding: 40px 0px 80px 0px;
+}
+
+.outros-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+
+@media (max-width: 600px) {
+  .outros-contato {
+    grid-template-columns: 1fr;
+  }
+}
+
+.outros-contato .outros-contato-lista::before,
+.outros-contato .outros-contato-lista::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: currentColor;
+}
+
+.outros-contato .outros-contato-lista {
+  display: grid;
+  gap: 24px;
+  margin: 8px 0px 24px 0px;
+}
+
+.outros-contato .outros-contato-lista li,
+.outros-contato .outros-contato-lista li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.outros-contato .outros-contato-redes {
+  display: flex;
+  gap: 32px;
+}
+
+.outros-contato > p {
+  margin-top: 34px;
+}
