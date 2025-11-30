@@ -10,6 +10,7 @@
 .home-servicos ul {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 40px;
@@ -23,7 +24,8 @@
 
 .home-servicos ul li {
   flex: 1;
-  min-width: 200px;
+  max-width: 360px;
+  min-width: 250px;
 }
 
 .home-servicos ul li img {
@@ -35,10 +37,13 @@
 .home-servicos ul .servico-content {
   background: var(--cor-p1);
   padding: 8px 16px 20px 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .home-servicos ul span {
   display: block;
+  white-space: nowrap;
 }
 
 .home-servicos .btn-1 {
