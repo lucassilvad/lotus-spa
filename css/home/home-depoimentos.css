@@ -1,0 +1,102 @@
+.home-depoimentos h2 {
+  margin-bottom: 40px;
+}
+
+.home-depoimentos ul li {
+  background: var(--cor-0);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 40px 60px 0px;
+  border-radius: 8px;
+}
+
+.home-depoimentos ul li:nth-child(even) {
+  padding: 60px 0px 60px 40px;
+}
+
+@media (max-width: 800px) {
+  .home-depoimentos ul li {
+    padding: 32px 20px 32px 0px;
+    gap: 20px;
+  }
+
+  .home-depoimentos ul li:nth-child(even) {
+    padding: 32px 0px 32px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-depoimentos ul li {
+    grid-template-columns: 1fr;
+  }
+
+  .home-depoimentos ul li:nth-child(even) .depoimento-image {
+    order: -1;
+  }
+
+  .home-depoimentos ul li .depoimento-content {
+    padding-left: 20px;
+  }
+
+  .home-depoimentos ul li:nth-child(even) .depoimento-content {
+    padding: 0px;
+    padding-right: 20px;
+  }
+}
+
+.home-depoimentos ul li + li {
+  margin-top: 80px;
+}
+
+.home-depoimentos ul li img {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(107, 142, 173, 0.5);
+}
+
+.home-depoimentos ul li:nth-child(even) img {
+  border-radius: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.home-depoimentos .depoimento-content {
+  display: grid;
+  gap: 20px;
+}
+
+.home-depoimentos ul li .depoimento-content::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 3px;
+  background: var(--cor-s2);
+  margin-top: 20px;
+}
+
+.home-depoimentos ul li:nth-child(even) .depoimento-content::before {
+  justify-self: end;
+}
+
+.home-depoimentos .depoimento-content blockquote {
+  align-self: center;
+}
+
+.home-depoimentos ul li:nth-child(even) blockquote {
+  text-align: right;
+}
+
+.home-depoimentos ul li .depoimento-content .quotation-mark {
+  font-weight: 900;
+  color: var(--cor-s3);
+}
+
+.home-depoimentos ul li .depoimento-content .cite {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.home-depoimentos ul li:nth-child(even) .depoimento-content .cite {
+  text-align: right;
+}
