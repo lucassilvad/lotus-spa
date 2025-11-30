@@ -18,3 +18,30 @@
 .header-nav ul li:last-child {
   margin-left: 20px;
 }
+
+.header-nav ul li::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: currentColor;
+  margin: 0px auto;
+  margin-top: 4px;
+  transition: 0.3s;
+}
+
+.header-nav ul li::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: currentColor;
+  margin: 0px auto;
+  margin-bottom: 4px;
+  transition: 0.3s;
+}
+
+.header-nav ul li:hover::after,
+.header-nav ul li:hover::before {
+  width: 100%;
+}
