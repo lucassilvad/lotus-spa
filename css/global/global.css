@@ -5,9 +5,15 @@ body {
   margin-bottom: 120px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
+p,
 ul,
 li,
 a {
