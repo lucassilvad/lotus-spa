@@ -1,6 +1,7 @@
 .servicos .servicos-escolha {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
   border-bottom: 2px solid var(--cor-s2);
 }
