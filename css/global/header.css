@@ -1,0 +1,14 @@
+.header-bg {
+  background: var(--cor-0);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 40px;
+}
