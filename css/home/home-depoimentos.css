@@ -100,3 +100,9 @@
 .home-depoimentos ul li:nth-child(even) .depoimento-content .cite {
   text-align: right;
 }
+
+.home-depoimentos .btn-1 {
+  text-align: center;
+  margin-top: 80px;
+  justify-self: center;
+}
