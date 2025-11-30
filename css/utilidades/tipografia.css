@@ -39,3 +39,13 @@
   font: 600 0.875rem/1.15 "Hepta Slab", serif;
   text-transform: uppercase;
 }
+
+@media (max-width: 600px) {
+  .font-1-xl {
+    font: 500 2rem/1.125 "Gabarito", sans-serif;
+  }
+
+  .font-2-m {
+    font: 400 1rem/1.5 "Hepta Slab", serif;
+  }
+}
