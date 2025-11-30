@@ -1,3 +1,19 @@
 body {
   background: #faf7f2;
+  margin: 0px;
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
 }
