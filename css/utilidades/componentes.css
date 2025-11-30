@@ -17,9 +17,11 @@
 }
 
 .btn-1 {
+  display: block;
+  max-width: max-content;
   background: var(--cor-p2);
   color: var(--cor-s2);
-  padding: 6px 12px;
+  padding: 12px 40px;
   border-radius: 2px;
   transition: 0.3s;
 }
