@@ -20,6 +20,7 @@
 .home-pacotes ul li {
   background: var(--cor-s1);
   padding: 20px;
+  max-width: 360px;
   min-width: 250px;
   flex: 1;
 }
