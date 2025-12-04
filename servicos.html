@@ -35,11 +35,11 @@
       <div class="servicos-selecao font-2-l cor-s2">
         <div class="servico-tipo">
           <div class="servico-tipo-item">
-            <input type="radio" name="compra" id="compra-services" checked>
+            <input type="radio" name="compra" id="compra-services" data-compra="servico" checked>
             <label for="compra-services">Serviços</label>
           </div>
           <div class="servico-tipo-item">
-            <input type="radio" name="compra" id="compra-packages">
+            <input type="radio" name="compra" id="compra-packages" data-compra="pacote">
             <label for="compra-packages">Pacotes</label>
           </div>
         </div>
@@ -48,15 +48,15 @@
       <div class="servicos-selecao font-2-l cor-s2">
         <div class="servico-tipo">
           <div class="servico-tipo-item">
-            <input type="radio" name="servico-tipo" id="massagem">
+            <input data-servico-tipo="massagem" type="radio" name="servico-tipo" id="massagem">
             <label for="massagem">Massagem</label>
           </div>
           <div class="servico-tipo-item">
-            <input type="radio" name="servico-tipo" id="faciais">
+            <input data-servico-tipo="tratamento" type="radio" name="servico-tipo" id="faciais">
             <label for="faciais">Tratamentos Faciais</label>
           </div>
           <div class="servico-tipo-item">
-            <input type="radio" name="servico-tipo" id="bem">
+            <input data-servico-tipo="bem" type="radio" name="servico-tipo" id="bem">
             <label for="bem">Bem-Estar</label>
           </div>
         </div>
@@ -65,7 +65,7 @@
     <section class="servicos-lista">
       <ul>
 
-        <li class="shadow-1">
+        <li class="shadow-1 active" data-compra="servico" data-servico="massagem">
           <div><img src="./img/servicos-pagina/servico-1.jpg" alt=""></div>
           <div class="servicos-lista-item-content">
             <h2 class="font-2-m-b cor-p5">Massagem Relaxante</h2>
@@ -73,7 +73,7 @@
           </div>
         </li>
 
-        <li class="shadow-1">
+        <li class="shadow-1 active" data-compra="servico" data-servico="massagem">
           <div><img src="./img/servicos-pagina/servico-2.jpg" alt=""></div>
           <div class="servicos-lista-item-content">
             <h2 class="font-2-m-b cor-p5">Massagem Terapêutica</h2>
@@ -81,7 +81,7 @@
           </div>
         </li>
 
-        <li class="shadow-1">
+        <li class="shadow-1 active" data-compra="servico" data-servico="massagem">
           <div><img src="./img/servicos-pagina/servico-3.jpg" alt=""></div>
           <div class="servicos-lista-item-content">
             <h2 class="font-2-m-b cor-p5">Drenagem Linfática</h2>
@@ -89,7 +89,7 @@
           </div>
         </li>
 
-        <li class="shadow-1">
+        <li class="shadow-1 active" data-compra="servico" data-servico="tratamento">
           <div><img src="./img/servicos-pagina/servico-4.jpg" alt=""></div>
           <div class="servicos-lista-item-content">
             <h2 class="font-2-m-b cor-p5">Hidratação Facial Nutritiva</h2>
@@ -97,7 +97,7 @@
           </div>
         </li>
 
-        <li class="shadow-1">
+        <li class="shadow-1 active" data-compra="servico" data-servico="tratamento">
           <div><img src="./img/servicos-pagina/servico-5.jpg" alt=""></div>
           <div class="servicos-lista-item-content">
             <h2 class="font-2-m-b cor-p5">Limpeza de Pele Profunda</h2>
@@ -105,7 +105,7 @@
           </div>
         </li>
 
-        <li class="shadow-1">
+        <li class="shadow-1 active" data-compra="servico" data-servico="tratamento">
           <div><img src="./img/servicos-pagina/servico-6.jpg" alt=""></div>
           <div class="servicos-lista-item-content">
             <h2 class="font-2-m-b cor-p5">Revitalização Anti-Idade</h2>
@@ -113,7 +113,7 @@
           </div>
         </li>
 
-        <li class="shadow-1">
+        <li class="shadow-1 active" data-compra="servico" data-servico="bem">
           <div><img src="./img/servicos-pagina/servico-7.jpg" alt=""></div>
           <div class="servicos-lista-item-content">
             <h2 class="font-2-m-b cor-p5">Banho de Ofurô Aromático</h2>
@@ -121,7 +121,7 @@
           </div>
         </li>
 
-        <li class="shadow-1">
+        <li class="shadow-1 active" data-compra="servico" data-servico="bem">
           <div><img src="./img/servicos-pagina/servico-8.jpg" alt=""></div>
           <div class="servicos-lista-item-content">
             <h2 class="font-2-m-b cor-p5">Esfoliação Corporal</h2>
@@ -129,7 +129,7 @@
           </div>
         </li>
 
-        <li class="shadow-1">
+        <li class="shadow-1 active" data-compra="servico" data-servico="bem">
           <div><img src="./img/servicos-pagina/servico-9.jpg" alt=""></div>
           <div class="servicos-lista-item-content">
             <h2 class="font-2-m-b cor-p5">Envoltório Corporal</h2>
@@ -137,7 +137,7 @@
           </div>
         </li>
 
-        <li class="servicos-item-pacote shadow-2">
+        <li class="servicos-item-pacote shadow-2 active" data-compra="pacote" data-pacote="">
           <div><img src="./img/pacotes/pacote-essential.jpg" alt=""></div>
           <div class="servicos-lista-item-pacote-content">
             <h2 class="font-2-xxl cor-s2">Day Spa<br>Essencial</h2>
@@ -146,7 +146,7 @@
           </div>
         </li>
 
-        <li class="servicos-item-pacote shadow-2">
+        <li class="servicos-item-pacote shadow-2 active" data-compra="pacote" data-pacote="">
           <div><img src="./img/pacotes/pacote-oriental.jpg" alt=""></div>
           <div class="servicos-lista-item-pacote-content">
             <h2 class="font-2-xxl cor-s2">Day Spa<br>Luxo Oriental</h2>
@@ -156,7 +156,7 @@
           </div>
         </li>
 
-        <li class="servicos-item-pacote shadow-2">
+        <li class="servicos-item-pacote shadow-2 active" data-compra="pacote" data-pacote="">
           <div><img src="./img/pacotes/pacote-revitalizante.jpg" alt=""></div>
           <div class="servicos-lista-item-pacote-content">
             <h2 class="font-2-xxl cor-s2">Day Spa<br>Revitalizante</h2>
@@ -215,20 +215,44 @@
   <script>
     const compraTipos = document.querySelectorAll('.servico-tipo input[name="compra"]')
     const servicoTipos = document.querySelector('.servicos .servicos-selecao:last-child')
+    const opcoesServico = document.querySelectorAll(".servico-tipo input[name='servico-tipo']")
+    const servicosListaItem = document.querySelectorAll(".servicos-lista li")
 
-    function conferirAtivacao() {
+    function showServiceTypes() {
       servicoTipos.classList.remove('active')
-
       if (compraTipos[0].checked) {
-        servicoTipos.classList.toggle('active')
+        servicoTipos.classList.add('active')
+        opcoesServico.forEach(item => item.checked = false)
       }
     }
+
+    function filterBuyingTypes(event) {
+
+      const compraTipo = event.target.dataset.compra
+      const servicosListaItemSelecionados = document.querySelectorAll(`.servicos-lista li[data-compra='${compraTipo}']`)
+
+      servicosListaItem.forEach(servicoItem => servicoItem.classList.remove('active'))
+      servicosListaItemSelecionados.forEach(servicoItemSelecionado => servicoItemSelecionado.classList.add('active'))
+      console.log(compraTipo);
+
+    }
+
     compraTipos.forEach(item => {
-      item.addEventListener('click', conferirAtivacao)
+      item.addEventListener('click', filterBuyingTypes);
+      item.addEventListener('click', showServiceTypes)
     })
 
-    conferirAtivacao()
+    showServiceTypes()
 
+    function getServiceOption(servico) {
+
+      const servicosSelecionados = document.querySelectorAll(`[data-servico="${servico.dataset.servicoTipo}"]`)
+
+      servicosListaItem.forEach(servicoItem => servicoItem.classList.remove('active'))
+      servicosSelecionados.forEach(servicoSelecionado => servicoSelecionado.classList.add('active'))
+    }
+
+    opcoesServico.forEach(item => item.addEventListener('click', () => getServiceOption(item)))
   </script>
 </body>
 
